@@ -1,6 +1,6 @@
 # Bypass_Windows_Administrator_Password
 
-***Bypass Windows Administrator Password***
+***Bypass Windows Administrator Password a forgotten PIN, Microsoft account password in cmd with a local account***
 
 ### Concepts
 
@@ -12,11 +12,13 @@
 - Open `HKEY_LOCAL_MACHINE
 - Go To Key Name `Hackeraj` -> Go To `Setup`
 - Click on `CmdLine` and Put `cmd.exe` in the Value Data
-- Click on `SetupType` and Put `1` in the Value Data
+- Click on `SetupType` and Put `1` or `2` in the Value Data
 - Click on `Hackeraj`
 - Go To File & Click on Unload Hive
 - Exit / Restart
-- Infront of You Command Prompt. Type net user username password e.g `net user hackeraj *` or `control userpasswords2`
+- Infront of You Command Prompt. So, First see users Type `net user` 
+- Then we need to create a account Type net user username password e.g `net user Hackeraj 12345 /add` or `control userpasswords2`
+- Then need to give Administrator Access this local account `Hackeraj` e.g `net localgroup Administrators Hackeraj /add`
 - Game Over
 	
 ### Tested on
